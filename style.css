@@ -81,6 +81,7 @@ HEADER
   display: flex;
   align-items: center;
   margin: 0 36px;
+  padding-top: 48px;
 }
 
 .about {
@@ -132,8 +133,4 @@ HEADER
   color: rgb(183, 183, 183);
   margin-top: 48px;
   margin-bottom: 12px;
-}
-
-.header__company {
-  
 }
