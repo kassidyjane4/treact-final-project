@@ -30,7 +30,20 @@ li {
   border: none;
 }
 
+h1 {
+  font-size: 48px;
+}
+
+p {
+  color: rgb(110, 110, 110);
+}
+
 .purple {
+  color: rgb(100, 25, 238);
+}
+
+.purple__title {
+  font-size: 16px;
   color: rgb(100, 25, 238);
 }
 
@@ -93,10 +106,6 @@ HEADER
   width: 40%;
 }
 
-.header__title {
-  font-size: 48px;
-}
-
 .header__img {
   width: 60%;
 }
@@ -149,21 +158,14 @@ SERVICES
   text-align: center;
 }
 
-.service__title {
-  font-size: 16px;
-  color: rgb(100, 25, 238);
-}
-
 .service__header {
   padding: 28px 0;
-  font-size: 40px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .service__para {
   margin: 0 auto;
   width: 40%;
-  color: rgb(110, 110, 110);
   line-height: 28px;
 }
 
@@ -200,4 +202,43 @@ SERVICES
   padding: 0 12px;
   line-height: 28px;
   color: rgb(110, 110, 110);
+}
+
+/*
+
+DESIGN
+
+*/
+
+.design {
+  display: flex;
+}
+
+.design__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 48px 36px;
+}
+
+.design__header {
+  margin-top: 24px;
+  padding-right: 20px;
+}
+
+.design__para {
+  line-height: 30px;
+  padding: 16px 16px 24px 0;
+}
+
+.design__button {
+  width: calc(100% / 3);
+}
+
+.design__img {
+  width: 50%;
+}
+
+.design__img img {
+  width: 100%;
 }
