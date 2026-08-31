@@ -242,3 +242,62 @@ DESIGN
 .design__img img {
   width: 100%;
 }
+
+/*
+
+START
+
+*/
+
+.start {
+  margin: 56px 0;
+  display: flex;
+  padding-top: 32px;
+}
+
+.start__img {
+  width: 50%;
+  padding-top: 40px;
+}
+
+.start__img img {
+  width: 100%;
+}
+
+.start__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+}
+
+.start__header {
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+
+.start__box {
+  display: flex;
+  width: 66%;
+  padding: 20px 0;
+}
+
+.start__box--text {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.start__number {
+  font-size: 32px;
+  color: rgb(215, 215, 215);
+  padding: 0 12px 0 8px;
+}
+
+.start__box--header {
+  padding-bottom: 8px;
+}
+
+.start__box--para {
+  line-height: 28px;
+}
