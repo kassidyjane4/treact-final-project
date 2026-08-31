@@ -166,3 +166,19 @@ SERVICES
   color: rgb(110, 110, 110);
   line-height: 28px;
 }
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 48px 0;
+}
+
+.service__box {
+  display: flex;
+  width: calc(100% / 3);
+}
+
+.service__description {
+  display: flex;
+  flex-direction: column;
+}
