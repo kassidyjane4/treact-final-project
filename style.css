@@ -62,7 +62,7 @@ NAVIGATION
 .nav__logo {
   display: flex;
   align-items: center;
-  padding: 12px 
+  padding: 12px;
 }
 
 .logo__img {
@@ -286,7 +286,6 @@ START
 .start__box--text {
   display: flex;
   flex-direction: column;
-
 }
 
 .start__number {
@@ -319,10 +318,10 @@ PRICING
 }
 
 .pricing__header--para {
- margin: 0 auto;
- width: 40%;
- line-height: 28px;
- padding-bottom: 24px;
+  margin: 0 auto;
+  width: 40%;
+  line-height: 28px;
+  padding-bottom: 24px;
 }
 
 .plans {
@@ -339,8 +338,10 @@ PRICING
   padding: 0 14px;
 }
 
-.plan__header, .plan__description, .plan__button {
-  border: solid rgb(236, 236, 236) 2px;
+.plan__header,
+.plan__description,
+.plan__button {
+  border: solid rgb(236, 236, 236) 1px;
   border-radius: 4px;
   padding: 24px 0;
 }
@@ -369,4 +370,9 @@ PRICING
 
 .plan__description--para {
   font-size: 12px;
+}
+
+.plan__focus {
+  background-color: rgb(118, 118, 227);
+  color: white;
 }
