@@ -80,8 +80,7 @@ HEADER
 .header {
   display: flex;
   align-items: center;
-  margin: 0 36px;
-  padding-top: 48px;
+  margin: 48px 36px;
 }
 
 .about {
@@ -134,3 +133,15 @@ HEADER
   margin-top: 48px;
   margin-bottom: 12px;
 }
+
+/*
+
+SERVICES
+
+*/
+
+.service {
+  margin: 50px 0;
+  text-align: center;
+}
+
