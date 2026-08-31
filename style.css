@@ -372,7 +372,15 @@ PRICING
   font-size: 12px;
 }
 
-.plan__focus {
+.plan__header--focus, .plan__description--focus, .plan__button--focus {
   background-color: rgb(118, 118, 227);
+  background-image: linear-gradient(to bottom right, rgb(140, 140, 240), rgb(158, 158, 240))
+}
+
+.plan__focus {
+  color: white;
+}
+
+.plan__focus--para {
   color: white;
 }
