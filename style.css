@@ -253,6 +253,7 @@ START
   margin: 56px 0;
   display: flex;
   padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .start__img {
@@ -300,4 +301,37 @@ START
 
 .start__box--para {
   line-height: 28px;
+}
+
+/*
+
+PRICING
+
+*/
+
+.pricing__header {
+  text-align: center;
+}
+
+.pricing__header--title {
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+
+.pricing__header--para {
+ margin: 0 auto;
+  width: 40%;
+  line-height: 28px;
+}
+
+.plans {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plan {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
 }
