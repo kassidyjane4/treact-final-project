@@ -342,8 +342,9 @@ PRICING
 .plan__description,
 .plan__button {
   border: solid rgb(236, 236, 236) 1px;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 24px 0;
+  max-width: 300px;
 }
 
 .plan__title {
@@ -372,9 +373,30 @@ PRICING
   font-size: 12px;
 }
 
+.plan__btn {
+  padding: 18px;
+  border-radius: 36px;
+  border: none;
+  width: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.plan__header--personal {
+  border-top-style: solid;
+  border-top-width: 14px;
+  border-top-color: rgb(27, 202, 176);
+}
+
+.plan__btn--personal {
+  color: white;
+  background-color: rgb(12, 151, 93);
+  background-image: linear-gradient(to bottom right, rgb(27, 202, 176), rgb(153, 242, 230));
+}
+
 .plan__header--focus, .plan__description--focus, .plan__button--focus {
   background-color: rgb(118, 118, 227);
-  background-image: linear-gradient(to bottom right, rgb(140, 140, 240), rgb(158, 158, 240))
+  background-image: linear-gradient(to bottom right, rgb(140, 140, 240), rgb(163, 163, 235))
 }
 
 .plan__focus {
@@ -383,4 +405,21 @@ PRICING
 
 .plan__focus--para {
   color: white;
+}
+
+.plan__btn--focus {
+  background-color: white;
+  color: rgb(100, 25, 238);
+}
+
+.plan__header--enterprise {
+  border-top-style: solid;
+  border-top-width: 14px;
+  border-top-color: rgb(243, 138, 77);
+}
+
+.plan__btn--enterprise {
+  color: white;
+  background-color: rgb(243, 138, 77);
+  background-image: linear-gradient(to bottom right, rgb(243, 138, 77), rgb(247, 198, 169));
 }
