@@ -28,6 +28,7 @@ li {
   background-color: rgb(100, 25, 238);
   border-radius: 36px;
   border: none;
+  cursor: pointer;
 }
 
 h1 {
@@ -80,12 +81,14 @@ NAVIGATION
   font-size: 16px;
   color: black;
   padding: 20px;
+  cursor: pointer;
 }
 
 .nav__link--primary {
   color: white;
   background-color: rgb(95, 25, 225);
   border-radius: 36px;
+  cursor: pointer;
 }
 
 /*
@@ -422,4 +425,22 @@ PRICING
   color: white;
   background-color: rgb(243, 138, 77);
   background-image: linear-gradient(to bottom right, rgb(243, 138, 77), rgb(247, 198, 169));
+}
+
+/*
+
+LINKS
+
+*/
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 5);
+  align-items: center;
 }
