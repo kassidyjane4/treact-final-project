@@ -39,6 +39,12 @@ p {
   color: rgb(110, 110, 110);
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
 .purple {
   color: rgb(100, 25, 238);
 }
@@ -331,7 +337,7 @@ PRICING
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  padding: 48px 0;
+  padding: 48px 0 180px;
 }
 
 .plan {
@@ -398,8 +404,8 @@ PRICING
 }
 
 .plan__header--focus, .plan__description--focus, .plan__button--focus {
-  background-color: rgb(118, 118, 227);
-  background-image: linear-gradient(to bottom right, rgb(140, 140, 240), rgb(163, 163, 235))
+  background-color: rgb(100, 25, 238);
+  background-image: linear-gradient(to bottom right, rgb(172, 136, 239), rgb(100, 25, 238));
 }
 
 .plan__focus {
@@ -433,9 +439,15 @@ LINKS
 
 */
 
+.footer {
+  background-color: rgb(100, 25, 238);
+  background-image: linear-gradient(to bottom right, rgb(172, 136, 239), rgb(100, 25, 238));
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
+  padding: 48px 0;
 }
 
 .link {
@@ -443,4 +455,48 @@ LINKS
   flex-direction: column;
   width: calc(100% / 5);
   align-items: center;
+  color: white;
+  padding: 48px 0;
+}
+
+.link__header {
+  padding: 24px 0;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px 24px;
+  position: relative;
+}
+
+.footer__logo {
+  display: flex;
+}
+
+.footer__logo--img {
+  height: 80px;
+}
+
+.footer__logo--name {
+  color: white;
+  font-size: 32px;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 110px;
+  bottom: 46px;
+}
+
+.copywright {
+  color: rgb(165, 164, 164);
+}
+
+.footer__socials {
+  color: white;
+}
+
+.footer__social {
+  height: 80px;
+  padding: 8px;
 }
