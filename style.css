@@ -581,7 +581,6 @@ LINKS
   .btn__menu {
     display: block;
   }
-}
 
 .header__title {
   font-size: 32px;
@@ -686,4 +685,6 @@ LINKS
 
 .footer__socials {
   transform: scale(0.8);
+}
+
 }
