@@ -440,6 +440,7 @@ LINKS
 */
 
 .footer__row {
+  width: 100%;
   background-color: rgb(100, 25, 238);
   background-image: linear-gradient(to bottom right, rgb(172, 136, 239), rgb(100, 25, 238));
 }
@@ -464,15 +465,27 @@ LINKS
 }
 
 .footer__info {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   padding: 0 24px 24px;
-  position: relative;
+}
+
+.footer__info > .footer__logo {
+  justify-self: start;
+}
+
+.footer__info > .copywright {
+  justify-self: center;
+}
+
+.footer__info > .footer__socials {
+  justify-self: end;
 }
 
 .footer__logo {
   display: flex;
+  align-items: center;
 }
 
 .footer__logo--img {
@@ -483,9 +496,7 @@ LINKS
   color: white;
   font-size: 32px;
   letter-spacing: 1px;
-  position: absolute;
-  left: 110px;
-  bottom: 46px;
+  padding-left: 10px;
 }
 
 .copywright {
