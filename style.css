@@ -439,7 +439,7 @@ LINKS
 
 */
 
-.footer {
+.footer__row {
   background-color: rgb(100, 25, 238);
   background-image: linear-gradient(to bottom right, rgb(172, 136, 239), rgb(100, 25, 238));
 }
@@ -494,9 +494,10 @@ LINKS
 
 .footer__socials {
   color: white;
+  display: flex;
+  gap: 12px;
 }
 
 .footer__social {
-  height: 80px;
-  padding: 8px;
+  transform: scale(1.8);
 }
