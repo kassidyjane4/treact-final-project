@@ -91,10 +91,22 @@ NAVIGATION
 }
 
 .nav__link--primary {
+  margin: 0;
+  padding: 10px 32px;
+  margin-top: 2px;
+  border-radius: 9999px;
   color: white;
   background-color: rgb(95, 25, 225);
-  border-radius: 36px;
+  line-height: 1.5s;
+  border: none;
+  width: auto;
+  transition: all 300ms ease;
   cursor: pointer;
+}
+
+.nav__link--primary:hover {
+  background-color: (80, 17, 204);
+  color: white;
 }
 
 .btn__menu {
@@ -227,6 +239,7 @@ HEADER
   font-weight: 700;
   font-size: 16px;
   transition: all 300ms ease;
+  cursor: pointer;
 }
 
 .header__small-text {
