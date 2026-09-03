@@ -22,13 +22,16 @@ li {
 }
 
 .btn {
-  padding: 18px;
+  padding: 12px 18px;
   color: white;
   text-decoration: none;
   background-color: rgb(100, 25, 238);
   border-radius: 36px;
   border: none;
   cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 16px;
 }
 
 h1 {
@@ -83,6 +86,11 @@ NAVIGATION
   letter-spacing: 1px;
 }
 
+.nav__links {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 .nav__link {
   text-decoration: none;
   font-size: 16px;
@@ -101,7 +109,6 @@ NAVIGATION
   line-height: 1.5s;
   border: none;
   width: auto;
-  transition: all 300ms ease;
   cursor: pointer;
 }
 
@@ -252,7 +259,7 @@ HEADER
 
 /*
 
-SERVICES
+FEATURES
 
 */
 
@@ -309,7 +316,7 @@ SERVICES
 
 /*
 
-DESIGN
+QUALITY
 
 */
 
@@ -348,7 +355,7 @@ DESIGN
 
 /*
 
-START
+STEPS
 
 */
 
@@ -403,6 +410,70 @@ START
 
 .start__box--para {
   line-height: 28px;
+}
+
+/*
+
+VALUES
+
+*/
+
+.values {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.values__text {
+  width: 50%;
+  padding: 32px 54px 32px 0;
+}
+
+.values__header {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-right: 20px;
+}
+
+.values__para {
+  line-height: 28px;
+}
+
+.values__text--item {
+  display: flex;
+  margin: 24px 18px 24px 0;
+}
+
+.values__text--img {
+  color: rgb(100, 25, 238);
+  border: solid rgb(236, 236, 236) 2px;
+  border-radius: 50%;
+  padding: 16px;
+}
+
+.values__text--description {
+  padding-right: 18px;
+}
+
+.values__text--header {
+  padding: 0 12px 8px;
+  letter-spacing: 1px;
+}
+
+.values__text--para {
+  padding: 0 12px;
+  line-height: 28px;
+}
+
+.values__button {
+  width: 30%;
+}
+
+.values__img {
+  width: 50%;
+}
+
+.values__img img {
+  width: 100%;
 }
 
 /*
@@ -500,6 +571,19 @@ PRICING
 .plan__header--focus, .plan__description--focus, .plan__button--focus {
   background-color: rgb(100, 25, 238);
   background-image: linear-gradient(to bottom right, rgb(172, 136, 239), rgb(100, 25, 238));
+  z-index: 5;
+}
+
+.plan__header--focus {
+  border-top-style: solid;
+  border-top-width: 7px;
+  border-top-color: rgb(39, 241, 241);
+}
+
+.plan__button--focus {
+  border-bottom-style: solid;
+  border-bottom-width: 7px;
+  border-bottom-color: rgb(39, 241, 241);
 }
 
 .plan__focus {
