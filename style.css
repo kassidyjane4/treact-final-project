@@ -358,7 +358,7 @@ QUALITY
 }
 
 .design__button {
-  width: calc(100% / 3);
+  width: 30%;
 }
 
 .design__img {
@@ -438,7 +438,7 @@ VALUES
 
 .values {
   display: flex;
-  margin-bottom: 48px;
+  align-items: center;
   padding: 0 24px;
 }
 
@@ -507,7 +507,7 @@ TESTIMONIALS
 .testimonials {
   display: flex;
   align-items: center;
-  padding: 0 24px;
+  padding: 0 24px 48px;
 }
 
 .testimonials__img {
@@ -618,6 +618,7 @@ PRICING
 
 .pricing__header {
   text-align: center;
+  margin-top: 48px;
 }
 
 .pricing__header--title {
@@ -750,14 +751,92 @@ PRICING
 
 /*
 
+CONTACT
+
+*/
+
+.contact__container {
+  padding: 96px 0;
+  width: 100%;
+  background-color: rgb(100, 25, 238);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__row {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__title {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+  z-index: 2;
+}
+
+.contact__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact__title, .contact__buttons {
+  width: 50%;
+}
+
+.contact__button {
+  padding: 20px 40px;
+  border-radius: 500px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #f7fafc;
+  line-height: 1.5;
+  margin: 1px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.contact__button:nth-child(1) {
+  background: #f56565;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  margin-right: 32px;
+  transition: all 300ms ease;
+}
+
+.contact__button:hover:nth-child(1) {
+  background-color: rgba(229, 62, 62);
+}
+
+.contact__button:nth-child(2) {
+  background-color: rgb(100, 25, 238);
+  border: 1px solid rgb(160, 174, 192);
+  transition: all 300ms ease;
+}
+
+.contact__button:hover:nth-child(2) {
+  background-color: rgba(247, 250, 252);
+  color: rgb(100, 25, 238);
+}
+
+/*
+
 FOOTER
 
 */
 
 .footer__row {
   width: 100%;
+  margin-top: 96px;
   background-color: rgb(100, 25, 238);
-  background-image: linear-gradient(to bottom right, rgb(172, 136, 239), rgb(100, 25, 238));
 }
 
 .links {
@@ -828,7 +907,7 @@ FOOTER
   transform: scale(1.8);
 }
 
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   .nav__links {
     display: none;
   }
@@ -842,6 +921,7 @@ FOOTER
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
   }
 
  .header__img {
@@ -851,4 +931,12 @@ FOOTER
  .services {
   margin: 0 56px;
  }
-} */
+
+.design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+}
