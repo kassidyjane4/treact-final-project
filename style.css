@@ -104,18 +104,12 @@ NAVIGATION
   margin: 0;
   padding: 10px 32px;
   margin-top: 2px;
-  border-radius: 9999px;
   color: white;
   background-color: rgb(95, 25, 225);
   line-height: 1.5s;
   border: none;
   width: auto;
   cursor: pointer;
-}
-
-.nav__link--primary:hover {
-  background-color: (80, 17, 204);
-  color: white;
 }
 
 .btn__menu {
@@ -129,11 +123,7 @@ NAVIGATION
 
 .menu__backdrop {
   position: absolute;
-  background-color: #242424;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  background-color: white;
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -825,3 +815,12 @@ FOOTER
   transform: scale(1.8);
 }
 
+@media (max-width: 1025px) {
+  .nav__links {
+    display: none;
+  }
+
+  .btn__menu {
+    display: block;
+  }
+}
