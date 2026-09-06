@@ -129,7 +129,7 @@ NAVIGATION
   border: solid 1px grey;
   border-radius: 8px;
   top: 12px;
-  left: 12px; 
+  left: 12px;
   right: 12px;
   z-index: 100;
   display: flex;
@@ -367,7 +367,7 @@ QUALITY
 
 .design__img img {
   width: 100%;
-  border: solid rgb(110, 110, 110) 2px;
+  border: solid rgb(206, 206, 206) 1px;
 }
 
 /*
@@ -442,52 +442,61 @@ VALUES
   padding: 0 24px;
 }
 
-.values__text {
+.section__text {
   width: 50%;
   padding: 32px 54px 32px 0;
 }
 
-.values__header {
+.section__header {
   margin-top: 24px;
   margin-bottom: 24px;
   padding-right: 20px;
 }
 
-.values__para {
+.section__para {
   line-height: 28px;
   font-weight: 450;
   font-size: 18px;
   margin-bottom: 40px;
 }
 
-.values__text--item {
+.values__list {
   display: flex;
-  margin: 24px 18px 24px 0;
 }
 
-.values__text--img {
+.value {
+  padding: 0 12px;
+}
+
+.value__title {
+  display: flex;
+  align-items: center;
+}
+
+.value__name {
+  margin-left: 16px;
+}
+
+.value__img {
   color: rgb(100, 25, 238);
   border: solid rgb(236, 236, 236) 2px;
   border-radius: 50%;
   padding: 16px;
 }
 
-.values__text--description {
-  padding-right: 18px;
-}
-
-.values__text--header {
+.value__header {
   padding: 0 12px 8px;
   letter-spacing: 1px;
 }
 
-.values__text--para {
-  padding: 0 12px;
+.value__para {
+  padding: 12px 0;
   line-height: 28px;
 }
 
 .values__button {
   width: 30%;
+  margin-top: 24px;
 }
 
 .values__img {
@@ -609,7 +618,6 @@ TESTIMONIALS
   height: 20px;
 }
 
-
 /*
 
 PRICING
@@ -703,12 +711,22 @@ PRICING
 .plan__btn--personal {
   color: white;
   background-color: rgb(12, 151, 93);
-  background-image: linear-gradient(to bottom right, rgb(27, 202, 176), rgb(153, 242, 230));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(27, 202, 176),
+    rgb(153, 242, 230)
+  );
 }
 
-.plan__header--focus, .plan__description--focus, .plan__button--focus {
+.plan__header--focus,
+.plan__description--focus,
+.plan__button--focus {
   background-color: rgb(100, 25, 238);
-  background-image: linear-gradient(to bottom right, rgb(172, 136, 239), rgb(100, 25, 238));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(172, 136, 239),
+    rgb(100, 25, 238)
+  );
   z-index: 5;
 }
 
@@ -746,7 +764,11 @@ PRICING
 .plan__btn--enterprise {
   color: white;
   background-color: rgb(243, 138, 77);
-  background-image: linear-gradient(to bottom right, rgb(243, 138, 77), rgb(247, 198, 169));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(243, 138, 77),
+    rgb(247, 198, 169)
+  );
 }
 
 /*
@@ -788,7 +810,8 @@ CONTACT
   justify-content: flex-end;
 }
 
-.contact__title, .contact__buttons {
+.contact__title,
+.contact__buttons {
   width: 50%;
 }
 
@@ -807,7 +830,11 @@ CONTACT
 .contact__button:nth-child(1) {
   background: #f56565;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow:
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   margin-right: 32px;
   transition: all 300ms ease;
 }
@@ -921,22 +948,31 @@ FOOTER
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
   }
 
- .header__img {
-  padding-top: 36px;
- }
+  .header__img {
+    padding-top: 36px;
+  }
 
- .services {
-  margin: 0 56px;
- }
+  .values__text--item {
+    flex-direction: column;
+  }
 
-.design {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .design {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .design__button {
+    width: 100%;
+  }
 }
