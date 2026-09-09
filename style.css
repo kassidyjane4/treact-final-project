@@ -509,6 +509,149 @@ VALUES
 
 /*
 
+PRICING
+
+*/
+
+.pricing__header {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.pricing__header--title {
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+
+.pricing__header--para {
+  margin: 0 auto;
+  width: 50%;
+  line-height: 28px;
+  font-weight: 450;
+  font-size: 18px;
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+}
+
+.plans {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.plan {
+  position: relative;
+  margin-top: 4rem;
+  display: flex;
+  width: 100%;
+  max-width: 24rem;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: rgb(255 255 255);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 2rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  color: rgb(26 32 44);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.plan__header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  line-height: 1.625;
+}
+
+.plan__description {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+
+
+.plan__button {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.plan__title {
+  font-size: 20px;
+}
+
+.plan__price {
+  font-size: 48px;
+  margin: 4px 0;
+}
+
+.plan__frq {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.plan__description {
+  line-height: 32px;
+}
+
+.plan__target {
+  font-size: 16px;
+}
+
+.plan__feature {
+  padding: 8px 0;
+}
+
+.plan__btn {
+  padding: 18px;
+  border-radius: 36px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.plan__btn--personal {
+  color: white;
+  background-color: rgb(12, 151, 93);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(27, 202, 176),
+    rgb(153, 242, 230)
+  );
+}
+
+.plan__focus {
+  /* color: white; */
+}
+
+.plan__focus--para {
+  /* color: white; */
+}
+
+.plan__btn--focus {
+  /* background-color: white;
+  color: rgb(100, 25, 238); */
+}
+
+.plan__btn--enterprise {
+  color: white;
+  background-color: rgb(243, 138, 77);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(243, 138, 77),
+    rgb(247, 198, 169)
+  );
+}
+
+/*
+
 TESTIMONIALS
 
 */
@@ -616,159 +759,6 @@ TESTIMONIALS
   color: rgb(100, 25, 238);
   width: 20px;
   height: 20px;
-}
-
-/*
-
-PRICING
-
-*/
-
-.pricing__header {
-  text-align: center;
-  margin-top: 48px;
-}
-
-.pricing__header--title {
-  padding-top: 24px;
-  padding-bottom: 12px;
-}
-
-.pricing__header--para {
-  margin: 0 auto;
-  width: 50%;
-  line-height: 28px;
-  font-weight: 450;
-  font-size: 18px;
-  margin-bottom: 40px;
-  padding-bottom: 24px;
-}
-
-.plans {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 48px 0 180px;
-}
-
-.plan {
-  width: calc(100% / 3);
-  display: flex;
-  flex-direction: column;
-  padding: 0 14px;
-}
-
-.plan__header,
-.plan__description,
-.plan__button {
-  border: solid rgb(236, 236, 236) 1px;
-  border-radius: 6px;
-  padding: 24px 0;
-  max-width: 300px;
-}
-
-.plan__title {
-  font-size: 14px;
-  padding-bottom: 8px;
-}
-
-.plan__price {
-  font-size: 30px;
-  padding-bottom: 8px;
-}
-
-.plan__frq {
-  font-size: 12px;
-}
-
-.plan__description {
-  line-height: 32px;
-}
-
-.plan__description--title {
-  font-size: 16px;
-}
-
-.plan__description--para {
-  font-size: 12px;
-}
-
-.plan__btn {
-  padding: 18px;
-  border-radius: 36px;
-  border: none;
-  width: 50%;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.plan__header--personal {
-  border-top-style: solid;
-  border-top-width: 14px;
-  border-top-color: rgb(27, 202, 176);
-}
-
-.plan__btn--personal {
-  color: white;
-  background-color: rgb(12, 151, 93);
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(27, 202, 176),
-    rgb(153, 242, 230)
-  );
-}
-
-.plan__header--focus,
-.plan__description--focus,
-.plan__button--focus {
-  background-color: rgb(100, 25, 238);
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(172, 136, 239),
-    rgb(100, 25, 238)
-  );
-  z-index: 5;
-}
-
-.plan__header--focus {
-  border-top-style: solid;
-  border-top-width: 7px;
-  border-top-color: rgb(39, 241, 241);
-}
-
-.plan__button--focus {
-  border-bottom-style: solid;
-  border-bottom-width: 7px;
-  border-bottom-color: rgb(39, 241, 241);
-}
-
-.plan__focus {
-  color: white;
-}
-
-.plan__focus--para {
-  color: white;
-}
-
-.plan__btn--focus {
-  background-color: white;
-  color: rgb(100, 25, 238);
-}
-
-.plan__header--enterprise {
-  border-top-style: solid;
-  border-top-width: 14px;
-  border-top-color: rgb(243, 138, 77);
-}
-
-.plan__btn--enterprise {
-  color: white;
-  background-color: rgb(243, 138, 77);
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(243, 138, 77),
-    rgb(247, 198, 169)
-  );
 }
 
 /*
@@ -910,12 +900,12 @@ FOOTER
 }
 
 .footer__logo--img {
-  height: 80px;
+  height: 60px;
 }
 
 .footer__logo--name {
   color: white;
-  font-size: 32px;
+  font-size: 28px;
   letter-spacing: 1px;
   padding-left: 10px;
 }
@@ -987,6 +977,7 @@ FOOTER
   }
 
   .contact__container {
+    width: auto;
     margin: 0 48px;
   }
 
@@ -1007,8 +998,26 @@ FOOTER
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 
 @media (max-width: 768px) {
+  .nav__container {
+    margin-top: 24px;
+  }
+
+  .about {
+    margin-top: 48px;
+    }
+  }
+
+  .header__title {
+    font-size: 30px;
+  }
+
+  .header__para {
+    font-size: 16px;
+  }
+
   .service__para {
-    width: 60%;
+    width: 70%;
+    font-size: 16px;
   }
 
   .services {
@@ -1035,14 +1044,19 @@ FOOTER
     margin-bottom: 24px;
   }
 
+  .design__para {
+    margin-left: 18px;
+    font-size: 16px;
+  }
+
   .design__button {
-    width: 70%;
-    margin-left: 80px;
+    width: 50%;
+    margin-left: 148px;
     margin-bottom: 80px;
   }
 
   .design__img {
-    width: 70%;
+    width: 60%;
   }
 
   .start {
@@ -1053,7 +1067,7 @@ FOOTER
   }
 
   .start__img {
-    width: 80%;
+    width: 70%;
   }
 
   .start__title {
@@ -1093,6 +1107,15 @@ FOOTER
     width: 80%;
   }
 
+  .section__para {
+    font-size: 16px;
+  }
+
+  .value {
+    width: 80%;
+    margin-left: 50px;
+  }
+
  .value__title {
   justify-content: center;
  }
@@ -1102,12 +1125,16 @@ FOOTER
  }
 
   .values__button {
-    width: 80%;
+    width: 40%;
   }
 
   .values__img {
     width: 70%;
     margin-right: 36px;
+  }
+
+  .pricing__header--para {
+    font-size: 16px;
   }
 
   .testimonials {
