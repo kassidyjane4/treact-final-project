@@ -230,14 +230,16 @@ HEADER
 .header__email--input {
   width: 100%;
   border-radius: 500px;
-  border: 2px solid rgb(229, 231, 235);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(229, 231, 235);
   padding: 20px 192px 20px 32px;
   color: rgb(36, 62, 99);
   font-size: 16px;
   font-weight: 500;
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 0px;
+  bottom: 0px;
   z-index: 1;
   transition: border-color 300ms;
 }
@@ -701,6 +703,7 @@ TESTIMONIALS
   display: flex;
   align-items: center;
   padding: 0 24px 48px;
+  margin-top: 60px;
 }
 
 .testimonials__img {
@@ -900,7 +903,8 @@ FOOTER
 .links {
   display: flex;
   flex-wrap: wrap;
-  padding: 48px 0;
+  justify-content: space-between;
+  padding-top: 48px;
 }
 
 .link {
@@ -914,6 +918,13 @@ FOOTER
 
 .link__header {
   padding: 24px 0;
+}
+
+.footer__divider {
+  width: 100%;
+  height: 2px;
+  margin: 64px 9px;
+  background: rgb(116, 44, 255);
 }
 
 .footer__info {
@@ -974,6 +985,10 @@ FOOTER
     display: block;
   }
 
+  .fa-bars {
+    width: 24px;
+  }
+
   .header {
     display: flex;
     flex-direction: column;
@@ -982,11 +997,21 @@ FOOTER
   }
 
   .about {
+    align-items: center;
     width: 70%;
   }
 
-  .header__email {
-    margin-left: 30px;
+  .header__title {
+    font-size: 30px;
+  }
+
+  .header__para {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  .header__company {
+    width: 60%;
   }
 
   .header__img {
@@ -996,7 +1021,6 @@ FOOTER
 
   .service__box {
     width: calc(50%);
-
   }
 
   .values__list {
@@ -1013,10 +1037,6 @@ FOOTER
     align-items: center;
   }
 
-  .plan__focus {
-    margin: 48px 0;
-  }
-
   .contact__container {
     width: auto;
     margin: 0 48px;
@@ -1027,6 +1047,10 @@ FOOTER
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .contact__buttons {
+    width: auto;
   }
 
   .contact__button {
@@ -1046,7 +1070,6 @@ FOOTER
   .about {
     margin-top: 48px;
     }
-  }
 
   .header__title {
     font-size: 30px;
@@ -1054,6 +1077,11 @@ FOOTER
 
   .header__para {
     font-size: 16px;
+  }
+
+  .service__header {
+    align-items: center;
+    text-align: center;
   }
 
   .service__para {
@@ -1067,6 +1095,8 @@ FOOTER
   }
 
   .service__box {
+    width: auto;
+    max-width: 384px;
     margin: 24px 0;
   }
 
@@ -1116,6 +1146,11 @@ FOOTER
     margin-right: 30px;
   }
 
+  .start__header {
+    margin-left: -4rem;
+    margin-right: -4rem;
+  }
+
   .start__box {
     flex-direction: column;
     align-items: center;
@@ -1145,7 +1180,7 @@ FOOTER
   }
 
   .section__text {
-    width: 80%;
+    width: 100%;
   }
 
   .section__para {
@@ -1157,13 +1192,13 @@ FOOTER
     margin-left: 50px;
   }
 
- .value__title {
-  justify-content: center;
- }
+  .value__title {
+    justify-content: center;
+  }
 
- .value__para {
-  padding-left: 28px;
- }
+  .value__para {
+    padding-left: 28px;
+  }
 
   .values__button {
     width: 40%;
@@ -1174,8 +1209,13 @@ FOOTER
     margin-right: 36px;
   }
 
+  .pricing__header {
+    margin: 0 20px;
+  }
+
   .pricing__header--para {
     font-size: 16px;
+    width: 80%;
   }
 
   .testimonials {
@@ -1193,12 +1233,195 @@ FOOTER
     width: 70%;
   }
 
-  .contact__container {
+  .contact__title {
+    width: 80%;
+  }
+
+  .contact__buttons {
+    margin-left: 60px;
+  }
+
+  .links {
+    justify-content: flex-start;
+  }
+
+  .link {
+    width: calc(33.3333%);
+  }
+
+  .footer__info {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+  }
+
+  .footer__logo {
+    margin-bottom: 30px;
+  }
+
+  .copywright {
+    margin-bottom: 40px;
+  }
+
+  .footer__socials {
+    margin-bottom: 24px;
+  }
+
+  .footer__social {
+    padding: 0 6px;
   }
   
 }
 
 @media (max-width: 640px) {
+  .header__title {
+    margin-left: -4rem;
+    margin-right: -4rem;
+  }
+
+  .header__para {
+    width: 120%;
+  }
+
+  .header__email {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header__email--input {
+    position: static;
+    line-height: 1.5;
+    padding: 16px 0px 16px 32px;
+  }
+
+  .header__email--btn {
+    width: 100%;
+    line-height: 1.5;
+    padding: 16px 0px;
+    margin: 16px 0px 0px;
+  }
+
+  .header__company {
+    width: 100%;
+  }
+
+  .service__header {
+    margin: 0 12px;
+    font-size: 42px;
+  }
+
+  .service__box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service__img {
+    margin-bottom: 12px;
+  }
+
+  .service__description {
+    align-items: center;
+  }
+
+  .service__description--header {
+    font-size: 24px;
+  }
+
+  .service__description--para {
+    text-align: center;
+  }
+
+  .design__img {
+    width: 80%;
+  }
+
+  .design__header {
+    font-size: 32px;
+  }
+
+  .design__para {
+    font-size: 14px;
+  }
+
+  .design__button {
+    margin-left: 120px;
+  }
+
+  .start__img {
+    width: 80%;
+  }
+
+  .start__header {
+    font-size: 32px;
+  }
+
+  .section__header {
+    font-size: 32px;
+  }
+
+  .section__para {
+    font-size: 14px;
+  }
+
+  .value {
+    margin-bottom: 24px;
+  }
+
+  .values__button {
+    margin-left: 16px;
+  }
+
+  .pricing__header--title {
+    font-size: 40px;
+  }
+
+  .testimonials__header {
+    font-size: 32px;
+  }
+
+  .testimonials__description {
+    font-size: 16px;
+  }
+
+  .testimonial__bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial__buttons {
+    margin-top: 24px;
+  }
+
+  .contact__title {
+    font-size: 24px;
+  }
+
+  .contact__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__button {
+    line-height: 0.7;
+  }
+
+  .contact__button:nth-child(1) {
+    margin-right: 56px;
+  }
+
+  .contact__button:nth-child(2) {
+    margin-left: 12px;
+  }
+
+  .links {
+    justify-content: center;
+  }
+
+  .link {
+    width: auto;
+    text-align: center;
+    align-items: center; 
+    padding: 0px 16px;
+  }
 
 }
