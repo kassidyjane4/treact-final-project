@@ -1423,5 +1423,35 @@ FOOTER
     align-items: center; 
     padding: 0px 16px;
   }
+}
 
+@media (max-width: 480px) {
+  .design__button {
+    margin-left: 86px;
+  }
+
+  .start__box {
+    margin-left: 14px;
+  }
+
+  .start__box--para {
+    width: 120%;
+  }
+
+  .value {
+    margin-left: 32px;
+  }
+
+  .value__para {
+    width: 120%;
+    padding-left: 0px;
+  }
+
+  .values__button {
+    width: 60%;
+  }
+
+  .testimonials__text {
+    width: 100%;
+  }
 }
