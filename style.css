@@ -1455,3 +1455,101 @@ FOOTER
     width: 100%;
   }
 }
+
+@media (max-width: 320px) {
+  .header__email {
+    width: 120%;
+  }
+
+  .header__company {
+    width: 140%;
+  }
+
+  .header__img {
+    width: 100%;
+  }
+
+  .design__header {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 18px;
+  }
+
+  .design__img {
+    width: 100%;
+  }
+
+  .design__button {
+    width: 80%;
+    margin-left: 24px;
+  }
+
+  .start__img {
+    width: 100%;
+  }
+
+  .start__text {
+    width: 80%;
+  }
+
+  .values__img {
+    width: 120%;
+  }
+
+  .section__text {
+    width: 140%;
+  }
+
+  .section__header {
+    font-size: 24px;
+    margin-left: 20px;
+  }
+
+  .pricing__header--title {
+    font-size: 32px;
+  }
+
+  .plans {
+    width: 70%;
+    margin-left: 60px;
+  }
+
+  .testimonials__img {
+    width: 100%;
+  }
+
+  .testimonials__text {
+    width: 100%;
+    margin-left: -2rem;
+  }
+
+  .testimonials__header {
+    font-size: 28px;
+    width: 120%;
+    margin-left: -1rem;
+  }
+
+  .contact__container {
+    width: auto;
+  }
+
+  .contact__title {
+    font-size: 20px;
+  }
+
+  .contact__button {
+    line-height: 1.2;
+    padding: 16px;
+    width: 80%;
+  }
+
+  .footer__divider {
+    width: auto;
+  }
+
+  .copywright {
+    text-align: center;
+
+  }
+
+}
